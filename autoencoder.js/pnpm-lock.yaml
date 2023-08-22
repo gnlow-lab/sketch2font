@@ -1,0 +1,23 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  autoencoder:
+    specifier: ^0.0.3
+    version: 0.0.3
+
+packages:
+
+  /adnn@2.0.10:
+    resolution: {integrity: sha512-c28wF4YrMJe5Mptc9mVRS3KMyKS53B457wovaqcehAjUEfgAQoH6gHv/R8fyjPOObHLu5ruemPWyHLzTn81WEA==}
+    engines: {node: '>=0.12.4'}
+    dev: false
+
+  /autoencoder@0.0.3:
+    resolution: {integrity: sha512-+AlG8e3j3jQAiFsM/WByGzsBHgm6UO3dQJqiAiciuE4EylKLaqf8k0vJY8dgsuo75GFG42QaWcHa5EK7o9vs+g==}
+    dependencies:
+      adnn: 2.0.10
+    dev: false

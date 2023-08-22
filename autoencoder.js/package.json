@@ -1,0 +1,6 @@
+{
+	"type": "module",
+	"dependencies": {
+		"autoencoder": "^0.0.3"
+	}
+}
