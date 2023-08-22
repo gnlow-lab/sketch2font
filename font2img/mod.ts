@@ -11,7 +11,7 @@ const save =
         ctx.fillStyle = "white"
         ctx.fillRect(0, 0, 100, 100)
 
-        ctx.font = "80px noto serif, noto serif kr"
+        ctx.font = "80px noto serif, noto serif kr, noto serif jp, noto serif devanagari, noto serif tamil"
         ctx.fillStyle = "black"
         ctx.textAlign = "center"
         ctx.textBaseline = "middle"
@@ -35,5 +35,29 @@ function* range(a: string, b: string) {
     }
 
 import { $ } from "https://deno.land/x/iteruyo@v0.3.0/mod.ts"
-$(range("A", "Z")).forEach(save)
-$(range("a", "z")).forEach(save)
+;[
+    // Roman
+    "AZ",
+    "az",
+    // Greek
+    "ΑΡ",
+    "ΣϿ",
+    // Cyrillic
+    "Ѐ҂",
+    "Ҋӿ",
+    // Hiragana
+    "ぁゖ",
+    // Devanagari
+    "ऄह",
+    "क़ॿ",
+    // Tamil
+    "அஊ",
+    "எஐ",
+    "ஒக",
+    "ஙச",
+    "ஜஜ",
+    "ஞட",
+    "ணத",
+    "நப",
+    "மஹ",
+].forEach(([a, b]) => $(range(a, b)).forEach(save))
